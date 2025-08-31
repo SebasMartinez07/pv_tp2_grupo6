@@ -12,6 +12,8 @@ function multiplicarSalarios(horasAlMes, pagoPorHora) {
     }
 }
 
+document.getElementById("resultado").style.display = "none";
+
 document.getElementById("calcular").onclick = function() {
     let horasAlMes = Number(document.getElementById("horasAlMes").value);
     let pagoPorHora = Number(document.getElementById("pagoPorHora").value);
@@ -19,4 +21,5 @@ document.getElementById("calcular").onclick = function() {
     let resultado = multiplicarSalarios(horasAlMes, pagoPorHora);
     
     document.getElementById("resultado").innerText = "Tu pago mensual es: " + resultado;
+    document.getElementById("resultado").style.display = "inline";
 }
