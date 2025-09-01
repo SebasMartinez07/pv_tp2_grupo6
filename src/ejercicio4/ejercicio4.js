@@ -1,4 +1,4 @@
-//document.getElementById("mostrarDatos").style.display = "none";
+document.getElementById("mostrarDatos").style.display = "none";
 
 document.getElementById("cargar").onclick = function() {
     let nombre = String(document.getElementById("nombre").value);
