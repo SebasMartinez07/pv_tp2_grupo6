@@ -14,3 +14,5 @@ function CalcularMayor(numeroValido1, numeroValido2){
     };
 }
 CalcularMayor(numeroValido1, numeroValido2);
+
+document.getElementById("resultado").innerText = "Su número es: " + numeroValido1;
