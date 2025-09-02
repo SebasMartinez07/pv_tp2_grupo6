@@ -18,3 +18,5 @@ return nuevaCadena;
 const resultado = resolver(valor);
 
 alert("Resultado: " + resultado);
+
+document.getElementById("resultado").innerText = + resultado;

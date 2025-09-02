@@ -6,5 +6,5 @@ let num3 = parseInt(document.getElementById("num3").value);
 
 
     let promedio = (num1 + num2 + num3) / 3;
-    document.getElementById("resultadoPromedio").innerText = "el promedio de los tres numero es:" + promedio;
+    document.getElementById("resultadoPromedio").innerText = "El promedio de los tres números es: " + promedio;
 });
