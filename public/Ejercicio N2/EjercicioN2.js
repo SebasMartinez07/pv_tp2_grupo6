@@ -1,16 +1,10 @@
+document.getElementById("Numeros").addEventListener("submit", function(e){
+e.preventDefault();
+let num1 = parseInt(document.getElementById("num1").value);
+let num2 = parseInt(document.getElementById("num2").value);
+let num3 = parseInt(document.getElementById("num3").value);
 
-let imput = prompt("Ingrese el primer numero entero");
-let numero1 = parseInt (imput);
-let imput2 = prompt("ingrese el segundo numero entero");
-let numero2 = parseInt(imput2);
-let imput3 = prompt("ingrece el tercer y ultimo numero entero");
-let numero3 = parseInt(imput3);
-let promedio = ((numero1 + numero2 + numero3) /3);
 
-if(isNaN(numero1) || isNaN(numero2) || isNaN(numero3)){
-    alert("eso no es un numero entero valido");
-
-}
-else {
-    alert("el promedio de los tres numero es:" + promedio);
-}
+    let promedio = (num1 + num2 + num3) / 3;
+    document.getElementById("resultadoPromedio").innerText = "el promedio de los tres numero es:" + promedio;
+});
